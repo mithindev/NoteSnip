@@ -81,4 +81,5 @@ if (!localStorage.getItem("hasLoadedBefore")) {
 else{
   const name = localStorage.getItem("name");
   document.getElementById("name").innerHTML = name;
+  document.title = name + "'s Temp Notes📝";
 }
