@@ -1,6 +1,8 @@
-# 📝 My Note Taking Web App 🌐
+<h1 align="center">CODE SNIP📂</h1>
 
-This is a web application that allows users to take notes and save them for future reference.
+<h2 align="center">📝 A Note Taking Web App 🌐</h2>
+
+<h3 align="center">This is a web application that allows users to take notes and save them for future reference.</h3>
 
 ## 🚀 Features
 
