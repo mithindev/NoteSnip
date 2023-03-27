@@ -14,7 +14,7 @@ function createNoteEl(id, content) {
   element.value = content;
 
   element.addEventListener("dblclick", ()=> {
-    const warning = confirm("Mithin, Do wanna delete this note?😊");
+    const warning = confirm(localStorage.getItem("name") + ", Do wanna delete this note?😊");
     if (warning) {
       deleteNote(id, element);
     }
@@ -66,3 +66,19 @@ function getNotes() {
 }
 
 btnEl.addEventListener("click", addNote)
+
+
+// On loading site, ask for name for personalisation
+if (!localStorage.getItem("hasLoadedBefore")) {
+  const name = prompt("Please enter a username");
+  localStorage.setItem("name", name);
+  localStorage.setItem("hasLoadedBefore", true);
+  if (!localStorage.getItem('isPageLoaded')) {
+    localStorage.setItem('isPageLoaded', true);
+    location.reload();
+  }
+}
+else{
+  const name = localStorage.getItem("name");
+  document.getElementById("name").innerHTML = name;
+}
