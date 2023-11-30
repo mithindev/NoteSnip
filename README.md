@@ -1,4 +1,4 @@
-<h1 align="center">CODE SNIP📂</h1>
+<h1 align="center">NOTE SNIP📂</h1>
 
 <h2 align="center">📝 A Note Taking Web App 🌐</h2>
 
